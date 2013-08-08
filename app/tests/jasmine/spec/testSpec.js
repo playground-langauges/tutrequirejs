@@ -23,4 +23,3 @@ define(['subtract', 'square'], function (sub, sq) {
 			expect(b).toBe(sq(11));
 		});
 	});
-});
