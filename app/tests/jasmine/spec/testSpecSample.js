@@ -1,5 +1,3 @@
-
-
 describe("Manually ticking the Jasmine Mock Clock", function() {
   var timerCallback;
   beforeEach(function() {
