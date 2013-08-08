@@ -3,6 +3,14 @@
 //
 //
 requirejs.config({
+	baseUrl: requirejs.isBrowser ? "./" : "./app/",
+	packages: [
+            {
+                name: 'thirdparty/window',
+                location: 'thirdparty/window',
+                main: 'window'
+            }
+        ],
 	paths: {
 		// switch and load alternative library if not available in first array element
 		'backbone':['http://backbonejs.org/backbone-min',
@@ -12,6 +20,7 @@ requirejs.config({
 		'jquery':['http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min',
             		//If the CDN location fails, load from this location
             		'./lib/jquery-2.0.3-min','./lib/jquery-2.0.3'],
+         // <<<<< Empty Lines >>>>>> //   		
 		'subtract':'./samples/math-lib/subtract',
 		'square':'./samples/math-lib/square',
 		'multiply':['./samples/math-lib/multiply','./samples/math-lib/multiply'],
