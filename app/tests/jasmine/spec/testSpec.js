@@ -22,4 +22,6 @@ define(['subtract', 'square'], function (sub, sq) {
 		it("Is square of 11 equals 121", function() {
 			expect(b).toBe(sq(11));
 		});
+
 	});
+});
