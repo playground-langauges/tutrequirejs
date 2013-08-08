@@ -56,6 +56,8 @@ require(['underscore', 'jquery', 'jasmine-html'], function(_, $, jasmine){
   var specs = [];
 
   specs.push('spec/testSpec');
+  specs.push('spec/testSpecSample');
+
   /*specs.push('spec/models/TodoSpec');
   specs.push('spec/views/ClearCompletedSpec');
   specs.push('spec/views/CountViewSpec');
